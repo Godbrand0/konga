@@ -180,3 +180,32 @@ body {
   border-bottom: 1px solid gainsboro;
   padding: 10px 2px;
 }
+
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+  padding: 10px 20px;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  color: rgb(110, 109, 109);
+}
+.contact i {
+  font-size: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+.contact h3 {
+  font-size: 15px;
+}
+.contact-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
