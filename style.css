@@ -123,15 +123,19 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 250px); /* 3 equal columns */
   grid-template-rows: auto; /* Rows will size automatically */
-  gap: 10px; /* Space between grid items */
+  gap: 15px; /* Space between grid items */
   padding: 10px;
+  padding-bottom: 40px;
 }
 .grid-image {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 .grid-item {
   background-color: white;
   padding: 10px;
+  height: 500px;
 }
 .numbers {
   display: flex;
@@ -160,25 +164,54 @@ body {
   font-size: 14px;
   background-color: #ff007b80;
 }
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.progress-bar {
+  width: 100px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress {
+  height: 100%;
+  width: 40%;
+  background-color: #4caf50;
+  border-radius: 10px 0 0 10px;
+  transition: width 0.3s ease;
+}
 .grid-button {
   width: 100%;
   padding: 10px;
   color: #ff007b;
-  font-size: 18px;
+  font-size: 14px;
   cursor: pointer;
   transition: all 1s;
   border-radius: 5px;
   border: 1px solid #ff007b;
+  font-weight: bold;
 }
 .grid-button:hover {
   background-color: #ff007b;
   color: white;
+}
+.Sold {
+  margin: 14px 10px;
+}
+.Sold span {
+  margin-left: 5px;
+  font-weight: bold;
 }
 .time {
   font-size: 16px;
   font-weight: bold;
   border-bottom: 1px solid gainsboro;
   padding: 10px 2px;
+}
+footer {
 }
 
 .contact-details {
@@ -289,7 +322,16 @@ body {
 }
 .download i {
   padding: 10px;
-  background-color: rgb(110, 109, 109);
+  background-color: rgb(51, 49, 49);
   border-radius: 50%;
   color: white;
+  cursor: pointer;
+  transition: all 1s;
+}
+.download i:nth-child(2) {
+  padding: 9px 12px;
+}
+.download i:hover {
+  background-color: #fff;
+  color: #000;
 }
