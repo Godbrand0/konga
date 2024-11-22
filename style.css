@@ -1,6 +1,12 @@
 body {
   margin: 0;
   box-sizing: border-box;
+  font-family: Helvetica Neue, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
+}
+.nav-bar {
+  position: relative;
+  z-index: 30;
 }
 .image_slider {
   height: 70px;
@@ -25,12 +31,18 @@ body {
   object-fit: contain;
 }
 .Nav-list {
-  background-color: #e6006e;
+  background-color: #ed017f;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
   color: white;
+}
+.nav-fix {
+  position: fixed;
+  top: -40px;
+  transform: translateY(40px);
+  width: 100%;
 }
 .Nav-list li {
   list-style: none;
@@ -42,23 +54,28 @@ body {
   height: 40px;
 }
 .search-input {
-  width: 450px;
-  height: 40px;
-  background-color: gray;
-  border-radius: 7px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+  width: 600px;
 }
 .search-input input {
-  width: 400px;
-  height: 34px;
+  flex: 1;
+  padding: 10px 10px;
+  font-size: 13px;
   border: none;
+  outline: none;
 }
 .search-input i {
-  background-color: yellow;
-  padding: 10px;
+  background-color: #fba100; /* Pink button */
   color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 .help i {
   margin-right: 8px;
@@ -67,12 +84,13 @@ body {
   border-radius: 50%;
 }
 .cart {
-  background-color: green;
+  background-color: #33b27b;
   display: flex;
   width: 100px;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 15px;
+  padding: 5px 15px;
+  font-size: 14px;
 }
 .cart span {
   background-color: white;
@@ -83,7 +101,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ff007b;
+  background-color: #94004f;
   margin-top: -16px;
 }
 .categories li {
@@ -135,7 +153,6 @@ body {
 .grid-item {
   background-color: white;
   padding: 10px;
-  height: 500px;
 }
 .numbers {
   display: flex;
@@ -161,8 +178,8 @@ body {
   font-weight: 600;
   border-radius: 8px;
 
-  font-size: 14px;
-  background-color: #ff007b80;
+  font-size: 12px;
+  background-color: rgba(255, 59, 59, 0.2);
 }
 .bar {
   display: flex;
