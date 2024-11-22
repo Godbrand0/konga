@@ -377,6 +377,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 200px;
   padding: 4px 10px;
 }
 .image_slider-mobile {
@@ -454,7 +455,9 @@ footer {
     text-align: center;
   }
   .nav-mobile {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .footer-mobile {
     display: flex;
@@ -469,6 +472,7 @@ footer {
     margin: 0px;
     gap: 7px;
   }
+
   .grid-image {
     height: 120px;
     width: 120px;
@@ -478,7 +482,7 @@ footer {
   }
   .numbers {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 8px;
     margin: 3px 2px;
