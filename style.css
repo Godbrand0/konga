@@ -370,6 +370,9 @@ footer {
   background-color: #fff;
   color: #000;
 }
+.nav-mobile {
+  display: none;
+}
 .nav-mobile-links {
   display: flex;
   justify-content: space-between;
@@ -449,6 +452,9 @@ footer {
   .texts h2 {
     font-size: 15px;
     text-align: center;
+  }
+  .nav-mobile {
+    display: block;
   }
   .footer-mobile {
     display: flex;
