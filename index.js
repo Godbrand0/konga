@@ -106,52 +106,19 @@ function updateProductInfo(products) {
             <button class="grid-button">Add To Cart</button>
           
     `;
-    // gridItem.classList.add("grid-item");
-
-    // const img = document.createElement("img");
-    // img.classList.add("grid-image");
-    // img.src = product.picture;
-
-    // const productName = document.createElement("p");
-    // productName.textContent = product.name;
-
-    // const number1 = document.createElement("span");
-    // number1.classList.add("number-1");
-    // number1.innerHTML = `<i class="fa-solid fa-naira-sign"></i>${product.price}`;
-
-    // const number2 = document.createElement("span");
-    // number2.classList.add("number-2");
-    // number2.innerHTML = `<i class="fa-solid fa-naira-sign"></i>${product.former}`;
-
-    // const number3 = document.createElement("span");
-    // number3.classList.add("number-3");
-    // number3.textContent = product.discount;
-
-    // const timeElement = document.createElement("span");
-    // timeElement.classList.add("time");
-    // timeElement.innerHTML = `<i class="fa-solid fa-clock"></i>`;
-
-    // const soldElement = document.createElement("span");
-    // soldElement.classList.add("Sold");
-    // const soldSpan = document.createElement("span");
-    // soldSpan.textContent = "0%";
-    // soldElement.appendChild(soldSpan);
-
-    // const progressBar = document.createElement("div");
-    // progressBar.classList.add("progress");
-    // progressBar.style.width = "0%";
-
-    // gridItem.appendChild(img);
-    // gridItem.appendChild(productName);
-    // gridItem.appendChild(number1);
-    // gridItem.appendChild(number2);
-    // gridItem.appendChild(number3);
-    // gridItem.appendChild(timeElement);
-    // gridItem.appendChild(soldElement);
-    // gridItem.appendChild(progressBar);
 
     grid.appendChild(gridItem);
   });
 }
 
 updateProductInfo(products);
+
+const nerve = document.querySelector(".nerve");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    nerve.classList.add("nav-fix");
+  } else {
+    nerve.classList.remove("nav-fix");
+  }
+});
