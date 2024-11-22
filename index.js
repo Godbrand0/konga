@@ -83,6 +83,7 @@ function updateProductInfo(products) {
               alt=""
               class="grid-image"
             />
+            <div>
             <p>${product.name}</p>
             <div class="numbers">
               <span class="number-1"
@@ -104,7 +105,7 @@ function updateProductInfo(products) {
             </div>
            
             <button class="grid-button">Add To Cart</button>
-          
+          </div>
     `;
 
     grid.appendChild(gridItem);
